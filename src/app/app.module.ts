@@ -10,10 +10,16 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { TodocheckComponent } from './todocheck/todocheck.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatTreeModule} from '@angular/material/tree';
+import { FormsModule } from '@angular/forms';
+import { AddtolistComponent } from './addtolist/addtolist.component';
+import {MatInputModule} from '@angular/material/input';
+import { CreatelistComponent } from './createlist/createlist.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TodocheckComponent
+    TodocheckComponent,
+    AddtolistComponent,
+    CreatelistComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +29,9 @@ import {MatTreeModule} from '@angular/material/tree';
     MatButtonModule,
     MatCheckboxModule,
     MatMenuModule,
-    MatTreeModule
+    MatTreeModule,
+    FormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

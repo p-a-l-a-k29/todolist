@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TodoserService } from './todoser.service';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project';
-  add()
-  {
-
-  }
+  constructor(private td:TodoserService){}
+  tdList=this.td.getTdList();
+  
 }

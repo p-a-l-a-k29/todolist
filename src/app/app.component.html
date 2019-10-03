@@ -1,15 +1,4 @@
 <mat-toolbar color="accent">TO-DO LIST</mat-toolbar><br>
-<button mat-raised-button [matMenuTriggerFor]="menu" color="primary">Todays's list</button>
-<mat-menu #menu="matMenu">
-<mat-checkbox>Get up at 5:30.</mat-checkbox><br>
-<mat-checkbox>Meditate for 15 mins.</mat-checkbox><br>
-<mat-checkbox>Go to the Gym.</mat-checkbox><br>
-<mat-checkbox>Take a shower</mat-checkbox><br>
-<mat-checkbox> Breakfast!</mat-checkbox><br>
-<mat-checkbox>Attend lectures:(</mat-checkbox><br>
-<mat-checkbox>ASSIGNMENTS</mat-checkbox><br>
-<mat-checkbox>Netflix and chill!:)</mat-checkbox><br><br>
-</mat-menu><br><br>
-<button mat-raised-button color="primary">ADD ITEM</button><br>
-<input type="text" placeholder="enter an item"><br><br>
-<button mat-raised-button color="primary">DELETE ITEM</button><br><br>
+<app-createlist></app-createlist>
+<app-addtolist></app-addtolist>
+
